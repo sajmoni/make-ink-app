@@ -18,19 +18,21 @@
 
 - :atom: [react](https://github.com/facebook/react)
 
-- :zap: [esbuild](https://github.com/evanw/esbuild)
-
-Uses `esbuild` since it's very fast. Waiting >1s for the app to rebuild in development (Using `tsc`) can become frustrating in the long run.
+### Tooling
 
 - :m: [`typescript`](https://github.com/microsoft/TypeScript)
 
-- :policeman: [`xo`](https://github.com/xojs/xo)
+- :zap: [esbuild](https://github.com/evanw/esbuild) - Bundler
 
-- :nail_care: [`prettier`](https://github.com/prettier/prettier)
+Optional, but included since it's faster than running `tsc`. Rebuild time in development is practically instant with `esbuild`, while `tsc` takes about >1s which can become frustrating in the long run.
 
-- :no_entry_sign: :poop: [`lint-staged`](https://github.com/okonet/lint-staged) + :dog: [`husky`](https://github.com/typicode/husky)
+- :policeman: [`xo`](https://github.com/xojs/xo) - Linter
 
-- :straight_ruler: [`ava`](https://github.com/avajs/ava)
+- :nail_care: [`prettier`](https://github.com/prettier/prettier) - Formatter
+
+- :no_entry_sign: :poop: [`lint-staged`](https://github.com/okonet/lint-staged) + :dog: [`husky`](https://github.com/typicode/husky) - Run `tsc` and `xo` on each commit
+
+- :straight_ruler: [`ava`](https://github.com/avajs/ava) - Tests
 
 ---
 
