@@ -5,7 +5,7 @@ type AppProps = {
   name?: string
 }
 
-const App: React.FC<AppProps> = ({ name = 'stranger' }) => {
+const App = ({ name = 'stranger' }: AppProps) => {
   return (
     <Box>
       <Text>{` Hello ${name} from React!`}</Text>

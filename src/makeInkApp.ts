@@ -27,7 +27,8 @@ const devDependencies = [
   'ts-node@10.0.0',
   'typescript@4.2.4',
   // Code quality
-  'xo@0.40.1',
+  // Cannot upgrade until: https://github.com/SamVerschueren/vscode-linter-xo/issues/91
+  'xo@0.39.1',
   'husky@6.0.0',
   'lint-staged@11.0.0',
   'eslint-config-xo-react@0.25.0',

@@ -8,6 +8,7 @@ const getPackageJsonTemplate = ({ projectName }: { projectName: string }) => {
         'chokidar "src" -c "node serve.js && node dist/index.js" --initial --silent',
       test: 'ava',
       qa: 'tsc && xo --fix',
+      prepare: 'husky install',
     },
     ava: {
       require: ['ts-node/register'],
@@ -23,6 +24,10 @@ const getPackageJsonTemplate = ({ projectName }: { projectName: string }) => {
     xo: {
       prettier: true,
       parser: '@typescript-eslint/parser',
+      extends: 'xo-react',
+      rules: {
+        'unicorn/filename-case': 'off',
+      },
     },
   }
 

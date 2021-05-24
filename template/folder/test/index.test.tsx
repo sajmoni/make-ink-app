@@ -5,6 +5,6 @@ import { render } from 'ink-testing-library'
 import App from '../src/App'
 
 test('Example test', (t) => {
-  const { lastFrame } = render(<App name={'Simon'} />)
+  const { lastFrame } = render(<App name="Simon" />)
   t.is(lastFrame(), ' Hello Simon from React!')
 })
