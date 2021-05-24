@@ -20,7 +20,7 @@
 
 - :zap: [esbuild](https://github.com/evanw/esbuild)
 
-Uses esbuild since it's very fast. Waiting >1s for the app to rebuild in development (Using `tsc`) can become frustrating in the long run.
+Uses `esbuild` since it's very fast. Waiting >1s for the app to rebuild in development (Using `tsc`) can become frustrating in the long run.
 
 - :m: [`typescript`](https://github.com/microsoft/TypeScript)
 

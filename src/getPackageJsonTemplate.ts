@@ -10,7 +10,8 @@ const getPackageJsonTemplate = ({ projectName }: { projectName: string }) => {
       qa: 'tsc && xo --fix',
     },
     ava: {
-      extensions: ['js', 'ts'],
+      require: ['ts-node/register'],
+      extensions: ['tsx'],
     },
     prettier: {
       trailingComma: 'all',
