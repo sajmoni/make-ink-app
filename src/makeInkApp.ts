@@ -16,7 +16,6 @@ const dependencies = [
   // Ink does not support react 17 yet
   'react@16.14.0',
   'yargs@17.0.1',
-  'chalk@4.1.1',
 ]
 
 const devDependencies = [

@@ -32,8 +32,6 @@ Uses `esbuild` since it's very fast. Waiting >1s for the app to rebuild in devel
 
 - :straight_ruler: [`ava`](https://github.com/avajs/ava)
 
-- :crayon: [`chalk`](https://github.com/chalk/chalk)
-
 ---
 
 ## :wrench: Usage
