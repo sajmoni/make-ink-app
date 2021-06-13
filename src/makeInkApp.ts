@@ -20,27 +20,27 @@ const dependencies = [
 
 const devDependencies = [
   // Build
-  'esbuild@0.12.1',
+  'esbuild@0.12.8',
   'chokidar-cli@2.1.0',
   // Typescript
   'ts-node@10.0.0',
-  'typescript@4.2.4',
+  'typescript@4.3.2',
   // Code quality
   // Cannot upgrade until: https://github.com/SamVerschueren/vscode-linter-xo/issues/91
   'xo@0.39.1',
   'husky@6.0.0',
   'lint-staged@11.0.0',
   'eslint-config-xo-react@0.25.0',
-  'eslint-plugin-react@7.23.2',
+  'eslint-plugin-react@7.24.0',
   'eslint-plugin-react-hooks@4.2.0',
   // Testing
   'ava@3.15.0',
   'ink-testing-library@2.1.0',
   // Types
-  '@types/node@15.6.0',
+  '@types/node@15.12.2',
   '@types/lodash@4.14.170',
   '@types/yargs@17.0.0',
-  '@types/react@17.0.6',
+  '@types/react@17.0.11',
 ]
 
 const command = 'yarn'
