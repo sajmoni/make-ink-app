@@ -1,4 +1,10 @@
-const getPackageJsonTemplate = ({ projectName }: { projectName: string }) => {
+import { PackageJson } from 'type-fest'
+
+const getPackageJsonTemplate = ({
+  projectName,
+}: {
+  projectName: string
+}): PackageJson => {
   const packageJsonTemplate = {
     name: projectName,
     version: '0.0.0',
