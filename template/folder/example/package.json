@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "private": true,
+  "scripts": {
+    "refresh": "yarn cache clean test-app && rm -rf $(yarn cache dir)/.tmp && yarn install --force --no-lockfile"
+  },
+  "dependencies": {
+    "test-app": "../test-app.tgz"
+  }
+}

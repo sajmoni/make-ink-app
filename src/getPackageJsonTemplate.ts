@@ -3,9 +3,14 @@ const getPackageJsonTemplate = ({ projectName }: { projectName: string }) => {
     name: projectName,
     version: '0.0.0',
     private: true,
+    bin: 'dist/index.js',
+    files: ['dist/'],
     scripts: {
+      go: './build-test.sh',
+      clean: `rm -f ${projectName}.tgz`,
+      build: 'node build.js',
       start:
-        'chokidar "src" -c "node serve.js && node dist/index.js" --initial --silent',
+        'chokidar "src" -c "yarn build && node dist/index.js" --initial --silent',
       test: 'ava',
       qa: 'tsc && xo --fix',
       prepare: 'husky install',
