@@ -6,6 +6,6 @@ import { render } from 'ink'
 
 import App from './App'
 
-yargs.parse()
+yargs.version().help().parse()
 
 render(<App />)
